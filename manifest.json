@@ -18,7 +18,9 @@
     ],
 
     "icons": {
-      "48": "icons/book_info.png"
+      "16": "icons/book_info.png",
+      "48": "icons/book_info.png",
+      "128": "icons/book_info.png"
     },
 
     "permissions": [
