@@ -1,0 +1,30 @@
+{
+    "manifest_version": 2,
+    "name": "購書助手",
+    "description": "This is an extension that can copy book information from BOOKTW and AmazonCN",
+    "version": "2.1",
+    "author": "Marble Kuok",
+
+    "background": {
+        "persistent": true,
+        "scripts": ["background.js"]
+    },
+
+    "content_scripts": [
+      {
+        "matches": ["*://www.books.com.tw/*","*://www.amazon.cn/*","*://www.amazon.com/*","*://item.jd.com/*"],
+        "js": ["content.js"]
+      }
+    ],
+
+    "icons": {
+      "48": "icons/book_info.png"
+    },
+
+    "permissions": [
+        "activeTab",
+        "contextMenus",
+        "clipboardWrite",
+		    "notifications" 
+    ]
+}
